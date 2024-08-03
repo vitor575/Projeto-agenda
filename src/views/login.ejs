@@ -5,6 +5,7 @@
 
                 <div class="col-lg-8 my-4 mx-auto">
                     <h1 class="text-center">Faça login ou cadastre-se</h1>
+                    
                 </div>
 
             </div>
@@ -12,6 +13,8 @@
             <div class="row my-5">
                 <div class="col-6">
                     <h4 class="text-center">Faça seu cadastro</h4>
+
+                    <%- include('includes/messages') %>
 
                     <form action="/login/register" method="POST">
                         <input type="hidden" name="_csrf" value=<%=csrfToken %> >

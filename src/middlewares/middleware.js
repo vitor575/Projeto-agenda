@@ -1,10 +1,11 @@
-exports.middlewareGlobal = (req,res,next) => {
-    res.locals.whatever = "qualquer cois";
- next()
+exports.middlewareGlobal = (req, res, next) => {
+    res.locals.errors = req.flash('errors');
+    res.locals.success = req.flash('success');
+    next()
 };
 
 exports.checkCsrf = (err, req, res, next) => {
-    if(err){
+    if (err) {
         return res.render('404');
     }
 
