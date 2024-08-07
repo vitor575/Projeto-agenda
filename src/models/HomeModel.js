@@ -6,3 +6,9 @@ const HomeScheema = new mongoose.Schema({
 });
 
 const HomeModel = mongoose.model('Home', HomeScheema);
+
+class Home {
+
+}
+
+module.exports = Home;
