@@ -15,16 +15,16 @@
                 <div class="col-6">
                     <h4 class="text-center">Faça seu cadastro</h4>
 
-                    <form action="/login/register" method="POST">
+                    <form class="form-cadastro" action="/login/register" method="POST">
                         <input type="hidden" name="_csrf" value=<%=csrfToken %> >
                         <div class="mb-3">
                             <label for="email" class="form-label">Endereço de email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            <input type="email" class="form-control" aria-describedby="emailHelp"
                                 name="email">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">senha</label>
-                            <input type="password" class="form-control" id="senha" name="password">
+                            <input type="password" class="form-control" name="password">
                         </div>
                         <button type="submit" class="btn btn-primary">Cadastrar-se</button>
                     </form>
@@ -32,16 +32,16 @@
                 <div class="col-6">
                     <h4 class="text-center">Realizar login</h4>
 
-                    <form action="/login/enter" method="POST">
+                    <form class="form-login" action="/login/enter" method="POST">
                         <input type="hidden" name="_csrf" value=<%=csrfToken %> >
                         <div class="mb-3">
                             <label for="email" class="form-label">Endereço de email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            <input type="email" class="form-control" aria-describedby="emailHelp"
                                 name="email">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">senha</label>
-                            <input type="password" class="form-control" id="senha" name="password">
+                            <input type="password" class="form-control" name="password">
                         </div>
                         <button type="submit" class="btn btn-primary">Logar</button>
                     </form>
