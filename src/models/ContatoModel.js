@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const validator = require('validator');
-
+ 
 const ContatoScheema = new mongoose.Schema({
     nome: { type: String, required: true },
     sobrenome: { type: String, required: false, default: "" },
